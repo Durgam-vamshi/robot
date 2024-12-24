@@ -1,0 +1,181 @@
+/* General Task Card Styling */
+.task-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .task-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .task-card.pending {
+    border-left: 5px solid #f39c12;
+  }
+  
+  .task-card.in-progress {
+    border-left: 5px solid #f1c40f;
+  }
+  
+  .task-card.completed {
+    border-left: 5px solid #2ecc71;
+  }
+
+  .task-card h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+  }
+  
+  .task-card p {
+    font-size: 16px;
+    color: #555;
+    margin: 4px 0;
+  }
+  .task-card p:nth-of-type(3) {
+    font-style: italic;
+    color: #888;
+  }
+  .task-card p:nth-of-type(4),
+  .task-card p:nth-of-type(5) {
+    font-weight: 600;
+  }
+  
+
+  .task-card button {
+    padding: 8px 16px;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .task-card button:hover {
+    transform: scale(1.05);
+  }
+  
+  .task-card button:active {
+    transform: scale(0.98);
+  }
+  .task-card button:first-of-type {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .task-card button:first-of-type:hover {
+    background-color: #0056b3;
+  }
+  .task-card button:last-of-type {
+    background-color: #e74c3c;
+    color: white;
+  }
+  
+  .task-card button:last-of-type:hover {
+    background-color: #c0392b;
+  }
+  @media (max-width: 768px) {
+    .task-card {
+      padding: 15px;
+      gap: 8px;
+    }
+  
+    .task-card h3 {
+      font-size: 18px;
+    }
+  
+    .task-card p {
+      font-size: 14px;
+    }
+  
+    .task-card button {
+      padding: 6px 12px;
+      font-size: 12px;
+    }
+  }
+  
+
+
+
+
+
+
+
+  /* Confirmation Modal Styles */
+.confirmation-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .confirmation-modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+  }
+  
+  .confirmation-modal h4 {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+  
+  .confirmation-buttons {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+  }
+  
+  .confirmation-buttons button {
+    padding: 8px 16px;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .confirmation-buttons button:hover {
+    transform: scale(1.05);
+  }
+  
+  .confirmation-buttons button:active {
+    transform: scale(0.98);
+  }
+  
+  .confirmation-buttons button:first-of-type {
+    background-color: #e74c3c;
+    color: white;
+  }
+  
+  .confirmation-buttons button:first-of-type:hover {
+    background-color: #c0392b;
+  }
+  
+  .confirmation-buttons button:last-of-type {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .confirmation-buttons button:last-of-type:hover {
+    background-color: #0056b3;
+  }
+  

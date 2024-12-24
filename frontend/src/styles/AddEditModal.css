@@ -1,0 +1,137 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+  }
+  
+  .ReactModal__Overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .ReactModal__Content {
+    background-color: #fff;
+    border-radius: 8px;
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transform: translateY(-100px);
+    animation: slideIn 0.3s ease-out forwards;
+  }
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #444;
+  }
+  
+  input,
+  textarea,
+  select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  input[type="text"],
+  input[type="datetime-local"],
+  textarea {
+    height: 40px;
+  }
+  
+  textarea {
+    min-height: 120px;
+    resize: vertical;
+  }
+  
+  select {
+    height: 40px;
+  }
+  button {
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  button[type="submit"] {
+    background-color: #007bff;
+  }
+  
+  button[type="button"] {
+    background-color: #ccc;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  button[type="button"]:hover {
+    background-color: #999;
+  }
+  
+  button:active {
+    transform: scale(0.98);
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateY(-100px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .ReactModal__Content {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    h2 {
+      font-size: 20px;
+    }
+  
+    input,
+    textarea,
+    select {
+      font-size: 14px;
+    }
+  
+    button {
+      font-size: 14px;
+      padding: 10px 20px;
+    }
+  }
+  

@@ -1,0 +1,93 @@
+.task-item {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .task-item.overdue {
+    background-color: #ffcccc; 
+    border: 1px solid #ff0000; 
+  }
+  
+  .task-item h3 {
+    margin: 0;
+    font-size: 1.2em;
+  }
+  
+  .task-item p {
+    margin: 5px 0;
+  }
+  
+  .task-actions button {
+    margin-right: 10px;
+  }
+  
+
+.confirmation-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.confirmation-modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 300px;
+}
+
+.confirmation-modal h4 {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.confirmation-buttons {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.confirmation-buttons button {
+  padding: 8px 16px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.confirmation-buttons button:hover {
+  transform: scale(1.05);
+}
+
+.confirmation-buttons button:active {
+  transform: scale(0.98);
+}
+
+.confirmation-buttons button:first-of-type {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.confirmation-buttons button:first-of-type:hover {
+  background-color: #c0392b;
+}
+
+.confirmation-buttons button:last-of-type {
+  background-color: #007bff;
+  color: white;
+}
+
+.confirmation-buttons button:last-of-type:hover {
+  background-color: #0056b3;
+}
